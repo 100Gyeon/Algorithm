@@ -4,9 +4,9 @@ class StringPattern {
       String answer = "";
       for(int i=0; i<n ; i++){
           if(i%2 == 0)
-        	  answer = answer + "¼ö";
+        	  answer = answer + "ìˆ˜";
           else
-        	  answer = answer + "¹Ú";
+        	  answer = answer + "ë°•";
       }
       return answer;
   }
