@@ -1,4 +1,4 @@
-// Math Å¬·¡½ºÀÇ ¸Ş¼Òµå È°¿ë
+// Math í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œ í™œìš©
 class Sum {
   public long solution(int a, int b) {
       long answer = 0;
