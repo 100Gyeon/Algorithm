@@ -6,12 +6,13 @@ public class CaesarCipher {
 	      char start;
 	      int length = s.length();
 	      for(int i = 0 ; i < length ; i++){
-	          ch = s.charAt(i); // StringÀÇ i¹øÂ° À§Ä¡¿¡ ÀÖ´Â ±ÛÀÚ¸¦ charÇü ch·Î ¹Ù²ãÁÜ
-	          if(ch != ' ') { // °ø¹éÀÌ ¾Æ´Ñ °æ¿ì
+	          ch = s.charAt(i); // Stringì˜ ië²ˆì§¸ ìœ„ì¹˜ì— ìžˆëŠ” ê¸€ìžë¥¼ charí˜• chë¡œ ë°”ê¿”ì¤Œ
+	          if(ch != ' ') { // ê³µë°±ì´ ì•„ë‹Œ ê²½ìš°
 	              start = Character.isUpperCase(ch)? 'A' : 'a';
-	              // Character.isUpperCase()´Â ´ë¹®ÀÚÀÎÁö ÆÇ´ÜÇÏ¿© true, false °ªÀ» ¸®ÅÏ
-	              // ch°¡ ´ë¹®ÀÚ¶ó¸é start´Â 'A'°¡ µÇ°í, ±×·¸Áö ¾ÊÀ¸¸é start´Â 'a'°¡ µÈ´Ù. 
+	              // Character.isUpperCase()ëŠ” ëŒ€ë¬¸ìžì¸ì§€ íŒë‹¨í•˜ì—¬ true, false ê°’ì„ ë¦¬í„´
+	              // chê°€ ëŒ€ë¬¸ìžë¼ë©´ startëŠ” 'A'ê°€ ë˜ê³ , ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ startëŠ” 'a'ê°€ ëœë‹¤. 
 	              ch = (char)((ch + n - start) % 26 + start);
+		      // nì´ ì–´ë–¤ ê°’ì´ë“  ìƒê´€ì—†ì´ ì•ŒíŒŒë²³ 26ê°œë¥¼ ìˆœíšŒ
 	          }
 	          answer += ch;
 	      }
