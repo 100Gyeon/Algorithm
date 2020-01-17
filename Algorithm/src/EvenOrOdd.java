@@ -8,10 +8,10 @@ public class EvenOrOdd {
 	  }
 }
 
-/* »ïÇ×¿¬»êÀÚ·Î ÄÚµå¸¦ °£°áÇÏ°Ô ¸¸µé ¼ö ÀÖ´Ù.
+/* ì‚¼í•­ì—°ì‚°ìë¡œ ì½”ë“œë¥¼ ê°„ê²°í•˜ê²Œ ë§Œë“¤ ìˆ˜ ìˆë‹¤.
  * 
  * public String solution(int num) {
- * 		return num % 2 == 0 ? "Even" : "Odd";
+ * 	return num % 2 == 0 ? "Even" : "Odd";
  * }
  * 
  */
