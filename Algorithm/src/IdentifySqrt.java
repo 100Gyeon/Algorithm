@@ -12,7 +12,7 @@ public class IdentifySqrt {
 	}
 }
 
-/* Math Å¬·¡½ºÀÇ ¸Ş¼Òµå·Î ÇØ°áÇÒ ¼öµµ ÀÖ´Ù.
+/* Math í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œë¡œ í•´ê²°í•  ìˆ˜ë„ ìˆë‹¤.
  * public long solution(long n) {
  * 		long sqrt = (long)Math.sqrt(n);
  * 		if(Math.pow(sqrt, 2) == n)
