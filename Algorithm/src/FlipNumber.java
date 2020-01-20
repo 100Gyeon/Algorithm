@@ -1,5 +1,5 @@
 
-public class FlippingNumber {
+public class FlipNumber {
 	  // String, StringBuffer 활용 문제
 	  public int[] solution(long n) {
 	      int[] answer = {};
