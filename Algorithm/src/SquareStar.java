@@ -14,5 +14,5 @@ class SquareStar {
 		}
         
         	sc.close();
-    }
+	}
 }
