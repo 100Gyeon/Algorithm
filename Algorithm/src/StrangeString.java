@@ -2,12 +2,30 @@
 class StrangeString {
 	public String solution(String s) {
 		String answer = "";
-		String[] array = s.split(""); // ""·Î ÂÉ°ºÀ¸¹Ç·Î ¾ËÆÄºª ÇÏ³ª¾¿ String¿¡ µé¾î°¨
+		String[] array = s.split(""); // ""ë¡œ ìª¼ê°°ìœ¼ë¯€ë¡œ ì•ŒíŒŒë²³ í•˜ë‚˜ì”© Stringì— ë“¤ì–´ê°
 		int cnt = 0;
-		for(String str : array) { // array.length¹ø ¹İº¹ÇÏ´Â enhanced for loop »ç¿ë
-			cnt = str.contains(" ") ? 0 : cnt + 1; // °ø¹éÀÌ¸é cnt¸¦ 0À¸·Î ¸¸µé¾îÁÜ
+		for(String str : array) { // array.lengthë²ˆ ë°˜ë³µí•˜ëŠ” enhanced for loop ì‚¬ìš©
+			cnt = str.contains(" ") ? 0 : cnt + 1; // ê³µë°±ì´ë©´ cntë¥¼ 0ìœ¼ë¡œ ë§Œë“¤ì–´ì¤Œ
 			answer += (cnt % 2 == 0) ? str.toLowerCase() : str.toUpperCase();
 		}
 		return answer;
 	}
 }
+
+/* ì²« ë²ˆì§¸ í’€ì´ëŠ” ì‹œê°„ ì´ˆê³¼
+* public String solution(String s) { 
+* 	String answer = "";
+* 	String[] str = s.split(" ");
+* 	int i,j;
+* 	int length = str.length;
+* 	for(i=0 ; i < length ; i++){
+* 		for(j=0 ; j < str[i].length() ; j++){
+* 			if(j%2 == 0)
+* 				answer += str[i].toUpperCase().charAt(j);
+* 			else
+* 				answer += str[i].toLowerCase().charAt(j);
+* 		if(i != length-1) answer += " ";
+* 	}
+* 	return answer;
+* }
+*/
