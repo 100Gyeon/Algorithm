@@ -25,6 +25,7 @@ class StrangeString {
 * 			else
 * 				answer += str[i].toLowerCase().charAt(j);
 * 		if(i != length-1) answer += " ";
+*	 	}
 * 	}
 * 	return answer;
 * }
