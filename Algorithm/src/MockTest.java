@@ -8,11 +8,11 @@ class MockTest {
 		int count1 = 0, count2 = 0, count3 = 0;
 		int length = answers.length;
 		for (int i = 0; i < length; i++) {
-			if (answers[i % 5] == p1[i])
+			if (answers[i] == p1[i % 5])
 				count1++;
-			if (answers[i % 8] == p2[i])
+			if (answers[i] == p2[i % 8])
 				count2++;
-			if (answers[i % 10] == p3[i])
+			if (answers[i] == p3[i % 10])
 				count3++;
 		}
 
