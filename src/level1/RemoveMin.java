@@ -14,7 +14,7 @@ class RemoveMin {
 			al.add(arr[i]);
 		}
 		Integer minimum = Collections.min(al);
-		// Collections.min()À¸·Î ArrayListÀÇ ÃÖ¼Ú°ªÀ» ¾ò´Â´Ù.
+		// Collections.min()ìœ¼ë¡œ ArrayListì˜ ìµœì†Ÿê°’ì„ ì–»ëŠ”ë‹¤.
 		al.remove(minimum);
 		int[] answer = new int[arr.length - 1];
 		for (int i = 0; i < al.size(); i++) {
