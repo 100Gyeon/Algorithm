@@ -13,10 +13,10 @@ public class PrimeNumber {
         		answer++;
         	}
         	
-        	// 오버플로우를 방지하기 위해서 j의 type은 long
+        	// 오버플로우를 방지하기 위해서 j의 type은 long으로 정함
         	// 에라토스테네스의 체를 이용해 1~n 범위의 소수를 구하면,   
         	// 루트 n 이하의 배수까지만 지우면 되기 때문에 i*i로 i의 배수를 지운다. 
-        	for(long j=(long)i*i; j<=n ; j+=i) {
+        	for(long j=(long)i*i; j<=n; j+=i) {
         		check[(int)j] = true;
             }
         }
