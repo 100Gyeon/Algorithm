@@ -10,7 +10,7 @@ class LCM {
 			int result = max % min;
 			if (result == 0) {
 				gcd = min; // 최대공약수
-				lcm = x * y / gcd; // 최소공배수 = 두 수의 곱 / 최대공배수
+				lcm = x * y / gcd; // 최소공배수 = 두 수의 곱 / 최대공약수
 				break;
 			} else {
 				max = min;
